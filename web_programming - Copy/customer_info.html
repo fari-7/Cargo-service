@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer infromation</title>
+    <link rel="stylesheet" href="customer_info.css">
+</head>
+<body>
+    <header style="background-color: rgba(52, 152, 219, 1); padding: 20px;">
+        <div class="header-container">
+            <img src="FB_IMG_1729578900278.jpg" alt="FLAIR Express Logo" class="logo-image">
+            <div class="logo">
+                <h1>FLAIR Express</h1>
+                <p>Your Reliable Door-to-Door Shipping Solution</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="member_signup.html">Members</a></li> -->
+                <li><a href="order_placement.php">Order placement</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Sign up</h2>
+        <form onsubmit="return data()" action="customer_data.php" method="post">
+            <label for="fname">First name:</label>
+            <input type="text" name="fn" id="fn" placeholder="First name"><br><br>
+
+
+            <label for="lname">Last name:</label>
+            <input type="text" name="ln" id="ln" placeholder="Last name"><br><br>
+
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="mail" placeholder="Email"><br><br>
+
+            <label for="ph">Phone:</label>
+            <input type="tel" name="ph" id="ph" placeholder="Phone number"><br><br>
+
+            <label for="tph">Telephone</label>
+            <input type="tel" name="tph" id="tph" placeholder="Telephone number"><br><br>
+
+            <label for="nid">NID:</label>
+            <input type="tel" name="nid" id="nid" placeholder="NID number"><br><br>
+
+            <label for="dob">Date of birth:</label>
+            <input type="date" name="dob" id="dob" placeholder="Date of Birth"><br><br>
+
+            <label for="g">Gender</label><br>
+            <input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender" value="Female">Female <br><br>
+
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass" placeholder="Password"><br><br>
+
+
+            <label for="pass">Confirm Password:</label>
+            <input type="password" id="cpass" placeholder="Confirm Password"><br><br>
+
+            <label for="ref">Referance member:*(if any)</label>
+            <input type="text" placeholder="Referance"><br><br>
+            <input type="submit"  value="Sign up">
+            <p><i>Already have an account?<a href="customer_login.html">Login</a></i></p>
+        </form>
+        
+    </main>
+    <script src="customer_info.js"></script>
+</body>
+</html>

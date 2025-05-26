@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="customer_login.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="Homepage.html">Go Back</a>
+        </nav>
+    </header>
+      <main>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="customer_login.php" method="POST" onsubmit="return data()">
+                <div class="input-group">
+                    <label for="username">Phone Number</label>
+                    <input type="tel" id="username" name="ph" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="pass" required>
+                </div>
+                <button type="submit" class="btn">Login</button><br><br>
+                <p><i>Don't have an account?<a href="customer_info.html">Sign up</a></i></p>
+            </form>
+        </div>
+    
+      </main>
+    
+</body>
+</html>
